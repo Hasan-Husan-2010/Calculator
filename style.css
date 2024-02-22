@@ -7,6 +7,8 @@ span, a, label {
 }
 body {
 background: linear-gradient(90deg,red,rgba(0, 0, 255, 0.729));
+min-height: 100dvh;
+background-repeat: no-repeat;
     overflow: hidden;
     margin: 0;
 }
