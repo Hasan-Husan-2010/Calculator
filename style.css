@@ -9,9 +9,23 @@ body {
 background: linear-gradient(90deg,red,rgba(0, 0, 255, 0.729));
 min-height: 100dvh;
 background-repeat: no-repeat;
-    overflow: hidden;
     margin: 0;
 }
+/* to'liq scrollbar */
+body::-webkit-scrollbar {
+    width: 20px;
+    background:linear-gradient(90deg, blue, red);
+  }
+  /* scrollbar yo'li */
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  /* scrollbar ko'rsatkichi */
+  body::-webkit-scrollbar-thumb {
+    background:linear-gradient(red,rgba(0, 0, 255, 0.695));
+    border-radius: 30px;
+    border: 2px solid black;
+  }
 .h1 {
     margin: 0;
     text-align: center;
@@ -37,7 +51,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 2.5%;
     row-gap: 20px;
 }
 #javob {
